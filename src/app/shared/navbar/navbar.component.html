@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-info shadow">
+    <a class="navbar-brand">
+        <i class="fas fa-project-diagram"></i> PeterApp
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item" *ngFor="let item of menu">
+
+                <a class="nav-link" [routerLink]="[item.url]"  routerLinkActive="">
+                    <i [class]="item.icono"></i>
+                    {{ item.titulo}} </a>
+            </li>
+      
+
+        </ul>
+
+    </div>
+</nav>
+

@@ -1,1 +1,58 @@
-<p>footer works!</p>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <!-- <img src="img/logo.png"> -->
+        <h3>Pedro<span>Araya Gálvez</span></h3>
+
+        <p class="footer-links">
+            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">
+                <i class="fas fa-home "></i>
+                Inicio </a>
+            |
+            <a class="nav-link" [routerLink]="['/personal']" routerLinkActive="active">
+                <i class="fas fa-user"></i>
+                Personal</a>
+            |
+            <a class="nav-link" [routerLink]="['/portafolio']" routerLinkActive="active">
+                <i class="fas fa-portrait"></i>
+                Portafolio</a>
+
+        </p>
+
+        <p class="footer-company-name">©{{ fecha | date:'yyyy'}} Desarrollador Autodidacta </p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Antoni Gaudi 1128
+                    Quillota</span>
+                V Región Chile</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <a href="tel:+56957642162" class="text-white">+56957642162</a>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:piteraraya@gmail.com">piteraraya@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Acerca de </span>
+            Soy desarrollador web, actualmente trabajador dependiente en el area, pero a ala vez sigo aprendiendo nuevas
+            tecnologías
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/PeterArayaGalvez" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/PiterNT" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/zipek_tecnologia/?hl=es-la" target="_blank"><i class="fab fa-instagram"
+                    target="_blank"></i></a>
+            <a href="https://www.linkedin.com/in/pedro-araya-galvez/" target="_blank"><i class="fab fa-linkedin"
+                    target="_blank"></i></a>
+            <!-- <a href="#"><i class="fab fa-youtube" target="_blank"></i></a> -->
+        </div>
+    </div>
+</footer>
