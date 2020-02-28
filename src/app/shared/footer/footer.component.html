@@ -1,33 +1,35 @@
-<footer class="footer-distributed">
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+                            <!-- <img src="img/logo.png"> -->
+                            <h3>Pedro<span>Araya Gálvez</span></h3>
 
-    <div class="footer-left">
-        <!-- <img src="img/logo.png"> -->
-        <h3>Pedro<span>Araya Gálvez</span></h3>
+                            <p class="footer-links">
+                                <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">
+                                    <i class="fas fa-home "></i>
+                                    Inicio </a>
+                                
+                                <a class="nav-link" [routerLink]="['/personal']" routerLinkActive="active">
+                                    <i class="fas fa-user"></i>
+                                    Personal</a>
+                                
+                                <a class="nav-link" [routerLink]="['/portafolio']" routerLinkActive="active">
+                                    <i class="fas fa-portrait"></i>
+                                    Portafolio</a>
 
-        <p class="footer-links">
-            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">
-                <i class="fas fa-home "></i>
-                Inicio </a>
-            |
-            <a class="nav-link" [routerLink]="['/personal']" routerLinkActive="active">
-                <i class="fas fa-user"></i>
-                Personal</a>
-            |
-            <a class="nav-link" [routerLink]="['/portafolio']" routerLinkActive="active">
-                <i class="fas fa-portrait"></i>
-                Portafolio</a>
+                            </p>
 
-        </p>
+                        <p class="footer-company-name">©{{ fecha | date:'yyyy'}} Desarrollador Autodidacta </p>
+                    </div>
 
-        <p class="footer-company-name">©{{ fecha | date:'yyyy'}} Desarrollador Autodidacta </p>
-    </div>
-
-    <div class="footer-center">
+    <div class="col-sm-4">
         <div>
             <i class="fa fa-map-marker"></i>
-            <p><span>Antoni Gaudi 1128
+            <span>Antoni Gaudi 1128
                     Quillota</span>
-                V Región Chile</p>
+                V Región Chile
         </div>
 
         <div>
@@ -36,10 +38,10 @@
         </div>
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="mailto:piteraraya@gmail.com">piteraraya@gmail.com</a></p>
+            <a href="mailto:piteraraya@gmail.com">piteraraya@gmail.com</a>
         </div>
     </div>
-    <div class="footer-right">
+    <div class="col-sm-4">
         <p class="footer-company-about">
             <span>Acerca de </span>
             Soy desarrollador web, actualmente trabajador dependiente en el area, pero a ala vez sigo aprendiendo nuevas
@@ -55,4 +57,8 @@
             <!-- <a href="#"><i class="fab fa-youtube" target="_blank"></i></a> -->
         </div>
     </div>
+
+</div>
+</div>
+</div>
 </footer>

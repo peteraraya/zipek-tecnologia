@@ -8,6 +8,7 @@ import { NavbarService } from '../../services/service.index';
 })
 export class NavbarComponent implements OnInit {
   menu:any = {};
+  logo:string = '';
   constructor(
               private _navService: NavbarService
               ) { }
@@ -19,6 +20,7 @@ export class NavbarComponent implements OnInit {
   cargarMenu() {
     // siempre va existir
     this.menu = this._navService.menu;
+    this.logo = this._navService.logo;
     console.log(this.menu);
   }
 

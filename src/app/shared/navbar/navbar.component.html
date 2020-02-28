@@ -1,23 +1,29 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-info shadow">
-    <a class="navbar-brand">
-        <i class="fas fa-project-diagram"></i> PeterApp
-    </a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item" *ngFor="let item of menu">
-
-                <a class="nav-link" [routerLink]="[item.url]"  routerLinkActive="">
-                    <i [class]="item.icono"></i>
-                    {{ item.titulo}} </a>
-            </li>
-      
-
-        </ul>
-
-    </div>
+<nav class="navbar navbar-expand-lg fixed-top  shadow-lg">
+    <div class="container">
+        <a class="navbar-brand">
+        <img [src]="logo" alt="zipek-tecnologia">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
+                    <img [src]="logo"class="logo-mobile-menu" alt="logo">
+                    <a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
+                </div>
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item" *ngFor="let item of menu">
+                    <a class="nav-link" [routerLink]="[item.url]" routerLinkActive="active">
+                        <i [class]="item.icono"></i>
+                        {{ item.titulo }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-success" href="tel:+56957642162" >+56957642162</a>
+                </li>
+            </ul>
+        </div>
+    </div>  <!-- fin container -->
 </nav>
-

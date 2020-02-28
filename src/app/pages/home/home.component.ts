@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../../services/service.index';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class HomeComponent implements OnInit {
-  titulo = 'Mis Proyectos';
+  titulo = 'Zipek Tecnología';
 
 
-  constructor() { }
+  constructor(
+   
+  ) { }
 
   ngOnInit() {
   }
+
+
 
 }
